@@ -8,11 +8,11 @@ Headers <- read.csv("./household_power_consumption.txt",
                     quote="", sep=";")
 Headers
 ## Plot1
+
+png(file="Plot1.png",
+    width = 480, height = 480, units = "px")
 hist(subDAT[,3], 
      xlab= "Global Active Power (kilowatts)",
      main= "Global Active Power", 
      col=2)
-dev.copy(png, 
-         file="Plot1.png",
-         width = 480, height = 480, units = "px")
 dev.off()

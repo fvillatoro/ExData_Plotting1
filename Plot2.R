@@ -8,6 +8,8 @@ Headers <- read.csv("./household_power_consumption.txt",
                     quote="", sep=";")
 Headers
 ## PLot2
+png(file="Plot2.png",
+    width = 480, height = 480, units = "px")
 plot(subDAT[,3],type="l",
      ylab= "Global Active Power (kilowatts)",
      xlab ="",
@@ -15,7 +17,4 @@ plot(subDAT[,3],type="l",
 axis(side=1, at = c(1,1440,2880), 
      labels = c("Fri","Thu","Sat"), 
      tick = 3)
-dev.copy(png, 
-         file="Plot2.png",
-         width = 480, height = 480, units = "px")
 dev.off()
