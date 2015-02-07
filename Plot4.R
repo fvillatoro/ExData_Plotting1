@@ -21,7 +21,7 @@ axis(side=1, at = c(1,1440,2880),
      tick = 3)
 ### Plot2
 plot(subDAT[,5],type="l",
-     ylab= "Global Active Power",
+     ylab= "Voltage",
      xlab ="datetime",
      xaxt='n', )
 axis(side=1, at = c(1,1440,2880), 
